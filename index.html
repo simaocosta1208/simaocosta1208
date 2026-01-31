@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo de Carros - Sprint Circuit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <header class="game-header">
+      <div>
+        <h1>Sprint Circuit</h1>
+        <p>Desvie dos carros e faça a maior pontuação possível.</p>
+      </div>
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Recorde: <span id="best">0</span></div>
+      </div>
+    </header>
+
+    <main class="game-main">
+      <canvas id="game" width="480" height="640"></canvas>
+      <div class="controls">
+        <button id="start">Iniciar corrida</button>
+        <button id="restart">Reiniciar</button>
+      </div>
+      <div class="tips">
+        <p>Controles: ← → para trocar de faixa, ↑ para acelerar, ↓ para frear.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
